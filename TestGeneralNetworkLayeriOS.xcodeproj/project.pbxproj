@@ -8,22 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		D6E520F524E7522F00920237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E520F424E7522F00920237 /* AppDelegate.swift */; };
-		D6E520F724E7522F00920237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E520F624E7522F00920237 /* SceneDelegate.swift */; };
 		D6E520F924E7522F00920237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E520F824E7522F00920237 /* ViewController.swift */; };
 		D6E520FC24E7522F00920237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E520FA24E7522F00920237 /* Main.storyboard */; };
 		D6E520FE24E7523100920237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E520FD24E7523100920237 /* Assets.xcassets */; };
 		D6E5210124E7523100920237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E520FF24E7523100920237 /* LaunchScreen.storyboard */; };
+		D6E5211824E7532500920237 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5211724E7532500920237 /* PostService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6E5211424E752BF00920237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6E5211024E752BF00920237 /* GeneralNetwotkLayeriOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6E520CD24E73B6300920237;
+			remoteInfo = GeneralNetwotkLayeriOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D6E520F124E7522F00920237 /* TestGeneralNetworkLayeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGeneralNetworkLayeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E520F424E7522F00920237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6E520F624E7522F00920237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D6E520F824E7522F00920237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6E520FB24E7522F00920237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6E520FD24E7523100920237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6E5210024E7523100920237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6E5210224E7523100920237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6E5211024E752BF00920237 /* GeneralNetwotkLayeriOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GeneralNetwotkLayeriOS.xcodeproj; sourceTree = "<group>"; };
+		D6E5211724E7532500920237 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +68,31 @@
 			isa = PBXGroup;
 			children = (
 				D6E520F424E7522F00920237 /* AppDelegate.swift */,
-				D6E520F624E7522F00920237 /* SceneDelegate.swift */,
 				D6E520F824E7522F00920237 /* ViewController.swift */,
+				D6E5211724E7532500920237 /* PostService.swift */,
 				D6E520FA24E7522F00920237 /* Main.storyboard */,
 				D6E520FD24E7523100920237 /* Assets.xcassets */,
 				D6E520FF24E7523100920237 /* LaunchScreen.storyboard */,
 				D6E5210224E7523100920237 /* Info.plist */,
+				D6E5210824E7526600920237 /* NetworkLayer */,
 			);
 			path = TestGeneralNetworkLayeriOS;
+			sourceTree = "<group>";
+		};
+		D6E5210824E7526600920237 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5211024E752BF00920237 /* GeneralNetwotkLayeriOS.xcodeproj */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		D6E5211124E752BF00920237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5211524E752BF00920237 /* GeneralNetwotkLayeriOS.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,12 +140,28 @@
 			mainGroup = D6E520E824E7522F00920237;
 			productRefGroup = D6E520F224E7522F00920237 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6E5211124E752BF00920237 /* Products */;
+					ProjectRef = D6E5211024E752BF00920237 /* GeneralNetwotkLayeriOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D6E520F024E7522F00920237 /* TestGeneralNetworkLayeriOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6E5211524E752BF00920237 /* GeneralNetwotkLayeriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GeneralNetwotkLayeriOS.framework;
+			remoteRef = D6E5211424E752BF00920237 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D6E520EF24E7522F00920237 /* Resources */ = {
@@ -138,8 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E520F924E7522F00920237 /* ViewController.swift in Sources */,
+				D6E5211824E7532500920237 /* PostService.swift in Sources */,
 				D6E520F524E7522F00920237 /* AppDelegate.swift in Sources */,
-				D6E520F724E7522F00920237 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
