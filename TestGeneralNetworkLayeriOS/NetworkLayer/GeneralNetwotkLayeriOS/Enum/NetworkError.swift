@@ -8,6 +8,7 @@
 import Foundation
 
 public enum NetworkError: LocalizedError {
+
     case unknown(withDescription: String)
     case noJSONData(withDescription: String)
 
